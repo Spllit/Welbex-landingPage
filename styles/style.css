@@ -3,22 +3,10 @@ body{
     color: #fff;
     font-family: 'Inter', sans-serif;
 }
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 a{
-    text-decoration: none;
     color: #E4E5EA;
 }
-h1,
-h2,
-h3{
-    margin: 0;
-}
 a:hover{
-    text-decoration: none;
     color: #E4E5EA;
 }
 button{
@@ -87,7 +75,7 @@ button{
 .main-left_title div{
     font-weight: 900;
 }
-.gradient-welbex{
+.gradient-marker{
     width: 247px;
     color: transparent; 
     background-clip: text;
@@ -275,15 +263,19 @@ button{
         margin-right: 15px;
     }
 }
-@media screen and (max-width: 992px){
-    .about{
-        /* margin-right: 50px; */
-    }
-}
-@media screen and (max-width: 890px){
+@media screen and (max-width: 900px){
     .nav__social-media{
         display: none;
     }
+    .nav__left{
+        width: 100%;
+    }
+    .nav-section{
+        flex: 1;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 890px){
     .nav__left{
         width: 100%;
     }
@@ -344,6 +336,7 @@ button{
         background-color: #000;
         padding-top: 45px;
         padding-bottom: 60px;
+        overflow: hidden;
     }
     .footer__title{
         
@@ -359,6 +352,9 @@ button{
     .purpleBalloon{
         top: 311px;
         left: 77%;
+    }
+    .bigRedLight{
+        top:15%
     }
     
 }
@@ -392,4 +388,16 @@ button{
     .nav__list li:last-child{
         display: none;
     }
+    .bigRedLight{
+        top: 8%;
+    }
+    .middleRedBalloon{
+        top: 455px;
+    }
+}
+@media screen and (max-width: 425px){
+    .nav__list li:not(:last-child){
+        margin-right: 10px;
+    }
+    
 }
